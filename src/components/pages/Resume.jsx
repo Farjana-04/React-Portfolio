@@ -1,12 +1,4 @@
-// export default function Resume() {
-//     return (
-//         <div className="container text-center">
-//         <h2 className="my-4">Download</h2>
-//         <a
-//           href="/Assets/Resume"
-//         download></a>
-//       </div>
-//     )}
+
 import React from 'react';
 
 export default function Resume() {
