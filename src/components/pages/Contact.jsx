@@ -63,8 +63,7 @@ export default function Contact() {
           type="text"
           placeholder="username"
         />
-        {/* TODO Add another input field with a value, name, type, and placeholder of "password" */}
-        {/* TODO Add a `onChange` attribute with a value of `handleInputChange` */}
+        
         <input
           value={message}
           name="message" // Add a name for the password input
