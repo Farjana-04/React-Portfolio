@@ -1,12 +1,4 @@
-// import Footer from './Footer';
-// export default function Home() {
-//   return (
-//     <div>
-//       {/* Your homepage content */}
-//       <Footer />
-//     </div>
-//   );
-// };
+
 import React from 'react';
 import Footer from './Footer';
 

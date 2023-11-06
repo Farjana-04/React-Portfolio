@@ -1,5 +1,6 @@
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
+//create a navigation bar with multiple tabs to switch between different sections or pages 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
@@ -14,7 +15,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Home
           </a>
         </li>
-        //create a navigation bar with multiple tabs to switch between different sections or pages 
+        
       <li className="nav-item">
         <a
           href="#about"
