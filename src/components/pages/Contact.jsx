@@ -21,7 +21,7 @@ export default function Contact() {
     }
   };
   const handleFormSubmit = (e) => {
-    //e.preventDefault is allow us  to refresh the page
+    
   e.preventDefault();
 
   // 
