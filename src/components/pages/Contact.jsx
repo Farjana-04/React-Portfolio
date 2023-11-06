@@ -77,12 +77,7 @@ export default function Contact() {
           Submit
         </button>
       </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-    
+     
       </div>
   );
 }
