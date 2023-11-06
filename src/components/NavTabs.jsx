@@ -14,7 +14,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Home
           </a>
         </li>
-        
+        //create a navigation bar with multiple tabs to switch between different sections or pages 
       <li className="nav-item">
         <a
           href="#about"
