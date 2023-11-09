@@ -11,8 +11,8 @@ export default function Portfolio() {
     demoLink: 'https://pokemon-card-collection-a3dc9dc21790.herokuapp.com/',
     image:  "/assets/project1.png",
     alt:"Add a partial icon from second projects Pokemon-CC"  
-       
     },
+    
     {
     title: 'Project 2',
     description: 'Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another applications API and using it in the context of their own. This app is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.',
@@ -21,6 +21,7 @@ export default function Portfolio() {
     image: "/assets/project2.png",
     alt:"Add a weather app icon"
     },
+
     {
     title: 'Project 3',
     description: 'This task is to build a Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.',
@@ -29,6 +30,7 @@ export default function Portfolio() {
     image: "/assets/project3.png",
     alt:"SVG icon"
     },
+
     {
     title: 'Project 4',
     description: 'This application is called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.',
@@ -36,16 +38,17 @@ export default function Portfolio() {
     demoLink: 'https://note-page-c825db812e82.herokuapp.com/',
     image: "/assets/project4.png",
     alt:"Icon from note taker application"
-      
     },
+
     {
-      title: 'Project 5',
-      description: 'To build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. Used Express.js for routing, a MongoDB database, the Mongoose ODM, a JavaScript date library of our choice or the native JavaScript Date object to format timestamps.',
-      githubLink: 'https://github.com/Farjana-04/NoSQL-Social-Network-API',
-      demoLink: 'https://drive.google.com/file/d/18op-vn3eV0F4iCGod-CzUZGVHJQtUXAA/view',
-      image: "/assets/project5.png",
-      alt:"Add a icon from insomnia page"
+    title: 'Project 5',
+    description: 'To build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. Used Express.js for routing, a MongoDB database, the Mongoose ODM, a JavaScript date library of our choice or the native JavaScript Date object to format timestamps.',
+    githubLink: 'https://github.com/Farjana-04/NoSQL-Social-Network-API',
+    demoLink: 'https://drive.google.com/file/d/18op-vn3eV0F4iCGod-CzUZGVHJQtUXAA/view',
+    image: "/assets/project5.png",
+    alt:"Add a icon from insomnia page"
     },
+
     {
     title: 'Project 6',
     description: 'This task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.',
@@ -56,18 +59,18 @@ export default function Portfolio() {
     },
   ];
 
-//   return (
-//     <div className="container text-center">
-//       <h2 className="my-4">My Works</h2>
-//       <div className="row">
-//          {projects.map((project, index) => (
-//           <div key={index} className="col-md-4 mb-4">
-//             <Project {...project} />
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
+  return (
+    <div className="container text-center">
+      <h2 className="my-4">My Works</h2>
+      <div className="row">
+         {projects.map((project, index) => (
+          <div key={index} className="col-md-4 mb-4">
+            <Project {...project} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
  }
 
 function Project({ title, description, githubLink, demoLink, image,alt }) {
