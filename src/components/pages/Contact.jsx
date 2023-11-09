@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
+import { validateEmail } from "../../utils/helpers";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Contact() {
-  const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  const [message, setMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [userName, setUserName] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === 'email') {
+    if (name === "email") {
       setEmail(value);
-    } else if (name === 'userName') {
+    } else if (name === "userName") {
       setUserName(value);
     } else {
       setMessage(value);
@@ -21,11 +21,11 @@ export default function Contact() {
   };
 
   const handleFormSubmit = (e) => {
-     //e.preventDefault is allow us  to refresh the page
+    //e.preventDefault is allow us  to refresh the page
     e.preventDefault();
 
     if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
+      setErrorMessage("Email or username is invalid");
       return;
     }
 
@@ -34,9 +34,9 @@ export default function Contact() {
       return;
     }
 
-    setUserName('');
-    setMessage('');
-    setEmail('');
+    setUserName("");
+    setMessage("");
+    setEmail("");
     alert(`Message sent by ${userName}`);
   };
 
@@ -83,9 +83,6 @@ export default function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
-    
-      </div>
+    </div>
   );
 }
-    
-

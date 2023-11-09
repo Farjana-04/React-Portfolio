@@ -1,0 +1,66 @@
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+.navbar-brand.custom-navbar-brand {
+  font-size: 24px;
+}
+.custom-navbar-color {
+  background-color: #221f1f;
+  padding-top: 20px;
+  margin-right: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0fdc42; /* Change the color on hover */
+}
+
+.background-container {
+  background: url('/assets/img3.jpg') center/cover no-repeat; 
+  height: 100vh; 
+  position: absolute;
+  padding-top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column; 
+} 
+
+
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
