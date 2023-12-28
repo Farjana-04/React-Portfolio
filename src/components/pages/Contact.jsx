@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Contact() {
@@ -83,6 +84,7 @@ export default function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "/src/App.css";
+import Footer from "./Footer";
 export default function Portfolio() {
 
   const projects = [
@@ -91,7 +92,7 @@ function Project({ title, description, githubLink, demoLink, image,alt }) {
         </div>
         {/* <img src={image} className="item-detail img" alt={alt}/> */}
       </div>
-      {/* {image} */}
+      <Footer />
     </div>
   );
 }
